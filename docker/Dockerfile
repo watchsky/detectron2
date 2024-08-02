@@ -21,7 +21,7 @@ USER appuser
 WORKDIR /home/appuser
 
 ENV PATH="/home/appuser/.local/bin:${PATH}"
-RUN wget https://bootstrap.pypa.io/pip/get-pip.py && \
+RUN wget https://bootstrap.pypa.io/pip/2.7/get-pip.py && \
 	python3.7 get-pip.py --user && \
 	rm get-pip.py
 
